@@ -13,9 +13,10 @@
               <if test="1==1">
                   std_num=#{std_num},zhname=#{zhname},version=#{version},skeys=#{skeys},release_date=#{release_date},impl_date=#{impl_date},
               </if>
-              <if test="package_path!=''">
+              <if test="package_path!=null&amp;&amp;package_path!=''">
               package_path=#{package_path},
               </if>
+
           </set>
           WHERE id=#{id}
     </update>

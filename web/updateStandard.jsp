@@ -13,7 +13,7 @@
 
 </head>
 <body>
-<form action="/UpdateServlet" method="post">
+<form action="/UpdateServlet" method="post" enctype="multipart/form-data">
     <input type="text" hidden name="id" value="${requestScope.standard.id}"/>
     标准号：<input type="text" readonly="readonly" id="std_num" name="std_num"  value="${requestScope.standard.std_num}"/><br/>
     中文名称：<input type="text" id="zhname" name="zhname" value="${requestScope.standard.zhname}"/><br/>

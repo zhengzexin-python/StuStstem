@@ -40,6 +40,16 @@ public class Standard implements Serializable{
         this.package_path = package_path;
     }
 
+    public Standard(int id, String std_num, String zhname, String version, String skeys, Date release_date, Date impl_date) {
+        this.id = id;
+        this.std_num = std_num;
+        this.zhname = zhname;
+        this.version = version;
+        this.skeys = skeys;
+        this.release_date = release_date;
+        this.impl_date = impl_date;
+    }
+
     @Override
     public String toString() {
         return "Standard{" +
