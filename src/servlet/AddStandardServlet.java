@@ -57,8 +57,7 @@ public class AddStandardServlet extends HttpServlet {
                     String name=fileItem.getName();
                     File file=new File(dir,name);
                     package_path=file.getAbsolutePath();
-                    System.out.println(package_path);
-                    /*fileItem.write(file);*/
+                    fileItem.write(file);
                 }
             }
 
@@ -67,7 +66,7 @@ public class AddStandardServlet extends HttpServlet {
         } catch (Exception e) {
             e.printStackTrace();
         }
-       /* Standard standard=new Standard(std_num,zhname,version,skeys,release_date,impl_date,package_path);
+        Standard standard=new Standard(std_num,zhname,version,skeys,release_date,impl_date,package_path);
         StandardBiz standardBiz=new StandardBizImpl();
         int count=standardBiz.addStandard(standard);
         if(count>0){
@@ -77,7 +76,7 @@ public class AddStandardServlet extends HttpServlet {
             printWriter.println(" <script type=\"text/javascript\">alert(\"添加失败\");history.back()</script>");
             printWriter.flush();
             printWriter.close();
-        }*/
+        }
 
     }
 
