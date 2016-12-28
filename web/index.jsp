@@ -75,7 +75,7 @@
             <td>${standard.version}</td>
             <td>${standard.release_date}</td>
             <td>${standard.impl_date}</td>
-            <td><a>下载</a>&nbsp;<a href="/GetStandardServlet?id=${standard.id}">修改</a></td>
+            <td><a href="/DownloadServlet?id=${standard.id}">下载</a>&nbsp;<a href="/GetStandardServlet?id=${standard.id}">修改</a></td>
         </tr>
     </c:forEach>
     </form>
